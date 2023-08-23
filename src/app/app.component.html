@@ -18,7 +18,11 @@
                   
                   <a href = "../assets/css/CVn.pdf"
       Download = "cv">
-         <button class="btn"> Download resume</button>
+         <button class="btn ml-2"> Download resume</button>
+      </a>
+      <a href = "../assets/images/cert.pdf"
+      Download = "certificates">
+         <button class="btn ml-3"> Download certificates</button>
       </a>
                   
               </div>
@@ -113,8 +117,8 @@
                             <span>2022</span>
                        </div>
                        <div class="timeline-info">
-                            <h3><span>html/css</span><small>
-                              self-education</small></h3>
+                            <h3><span> Self-education</span><small>
+                             HTML/CSS</small></h3>
                             <p>I tried to learn some skils about web development  so i began by learned some basics of HTML and CSS. 
                               I got 2 css and html certificates from <b>sololearn.</b></p>
                        </div>
@@ -147,7 +151,30 @@
       </div>
   </div>
 </section>
+<!-- skils -->
+  
+<div class="section" id="Skils">
+  <div class="container">
+      <div class="h4 text-center mb-4 title">Skills</div>
+      <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-6" *ngFor="let skil of skils">
+                      <div class="progress-container progress-primary">
+                          <span class="progress-badge">{{skils.skill}}</span>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skils.progress}}"></div>
+                              <span class="progress-value">{{skils.progress}}</span>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+        
+      </div>
+  </div>
+</div>
 
+</div>
 <!-- CONTACT -->
 <section class="contact py-5" id="contact">
 <div class="container">
