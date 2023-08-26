@@ -100,5 +100,7 @@
   },
   "cli": {
     "analytics": "57b37529-b9a7-4bdd-ad25-3c6699bc8404"
-  }
+
+  },
+  "defaultProject": "port"
 }
