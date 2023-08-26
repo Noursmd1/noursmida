@@ -1,0 +1,8 @@
+.timeline-wrapper:before{
+    content: "";
+    background: #474559;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 38px;
+}
